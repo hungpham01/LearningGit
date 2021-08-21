@@ -18,7 +18,8 @@ git clone https://github.com/hungpham01/LearningGit.git
 
 ## git config
 
-Set
+Setup git configuration
+
 ```
 git config --global user.name "User Name"
 git config --global user.email "email@gmail.com"
@@ -59,7 +60,7 @@ git add -u
 
 ## git rm
 
-Adding remote Git operation into the staging area for file removal
+Adding remove Git operation into the staging area for file removal
 ```
 git rm git_command_help.txt
 ```
@@ -73,6 +74,8 @@ git commit --amend -m 'message amended'
 ```
 
 ## git log
+
+Showing commit log comments 
 
 ```
 git log --oneline --graph
@@ -106,3 +109,10 @@ git checkout -- git_command_help.md
 git checkout <git_id> -- <filename>
 
 ```
+
+## .gitingore
+
+To create a gitignored files. Rather than generate a brandnew .gitignored.
+
+We go to github and generate a .gitignored file from a template by creating a new project
+on githut and choose the .gitignored template
