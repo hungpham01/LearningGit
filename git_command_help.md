@@ -82,3 +82,16 @@ glog -n 5
 # show last commit id
 git log --format="%h %B" --oneline -n 1
 ```
+
+## git diff
+
+```
+# Showing diff between working file and staging file
+git diff <filename>
+
+## Showing diff between working file and last commit
+git diff HEAD git_command_help.md
+
+## Showing diff between working file and previous commit
+git diff HEAD^^ git_command_help.md
+```
