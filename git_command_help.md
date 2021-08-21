@@ -64,3 +64,21 @@ Adding remote Git operation into the staging area for file removal
 git rm git_command_help.txt
 ```
 
+## git commit
+
+```
+git commit -m 'message'
+git commit --amend -m 'message amended'
+
+```
+
+## git log
+
+```
+git log --oneline --graph
+git log --oneline -n 5 --author="Hung Pham"
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+glog -n 5
+# show last commit id
+git log --format="%h %B" --oneline -n 1
+```
