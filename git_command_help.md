@@ -46,4 +46,21 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
+## git add
+
+Adding a file into the git repository
+```
+# adding all file in the current directory
+git add .
+# adding updated change to staging area
+git add -u
+
+```
+
+## git rm
+
+Adding remote Git operation into the staging area for file removal
+```
+git rm git_command_help.txt
+```
 
