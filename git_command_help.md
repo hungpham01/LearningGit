@@ -109,6 +109,45 @@ git checkout -- git_command_help.md
 git checkout <git_id> -- <filename>
 
 ```
+## git reset
+
+### Undo previous commit and leave file in working area
+
+```
+git reset HEAD~1
+```
+
+### Undo previous commit and leave file in staging area
+
+```
+git reset --soft HEAD~1
+```
+
+### Undo previous commit and delete all changes
+
+```
+ git reset --hard HEAD~1
+```
+
+### You did git reset --hard and need to get that code back
+
+Commits don't actually get destroyed in Git for some 90 days, so you can usually go back 
+and rescue one you didn't mean to get rid of.
+
+```
+# Find the shaYouDestroyed
+git reflog  
+# Create a new branch of the shaYouDestroyed
+git checkout -b someNewBranchName shaYouDestroyed
+```
+## git revert
+
+### Undo a "public" change
+
+```
+git revert HEAD
+git commit -m 'restoring the file I removed by accident'
+```
 
 ## .gitingore
 
