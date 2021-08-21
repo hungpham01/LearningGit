@@ -95,3 +95,14 @@ git diff HEAD git_command_help.md
 ## Showing diff between working file and previous commit
 git diff HEAD^^ git_command_help.md
 ```
+
+## git checkout
+
+```
+# Discard working copy and revert file to staging area
+git checkout -- git_command_help.md
+
+# Revert a file back to old copy of the commit
+git checkout <git_id> -- <filename>
+
+```
